@@ -14,14 +14,19 @@ public class euler5 {
 			return l;
 			
 		}
-	public static long gcd(long l,long i)
+	public static long gcd(long m,long n)
 	{
-		if(l%i!=0)
-			return gcd(i,l%i);
-			else
-				return i;
+		long r;
+		while (n!=0)
+		{
+			r=m%n;
+			m=n;
+			n=r;
 		}
-	}
+		return m;
+		}
+		}
+	
 
 				
 			
