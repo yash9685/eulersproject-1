@@ -2,15 +2,15 @@
 public class euler4 {
 
 	public static void main(String[] args) {
-		int prd=1;
+		int prod=1;
 		int maxpal= -1;
 		for(int i=999;i>=100;i--)
 		{
 			for(int j=999;j>=100;j--)
 			{
-				prd=i*j;
-				int temp=prd;
-				if(ispal(prd) && prd>maxpal)
+				prod=i*j;
+				int temp=prod;
+				if(ispal(prod) && prod>maxpal)
 					maxpal=temp;
 			}
 		}
@@ -24,7 +24,7 @@ public class euler4 {
 		while(n>0)
 		{
 			x=n%10;
-			r=r*10+x;
+			r=x+r*10;
 			n/=10;
 			}
 		return temp==r;
@@ -36,3 +36,4 @@ public class euler4 {
 	
 
 
+//         result --> 906609
